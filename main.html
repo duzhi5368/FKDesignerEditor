@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FKEditor</title>
+
+    <!-- CSS样式 -->
+    <link rel="stylesheet" href="Css/builderStyle.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/tooltips.css" />
+
+    <!-- 静态脚本加载 -->
+    <script src="Depend/jquery.1.11.2.min.js"></script>
+    <script src="Js/fastMD5.js"></script>
+    <script src="Js/resourceLoader.js"></script>
+    <script src="Js/main.js"></script>
+</head>
+<body>
+    <!-- 初始Loading提示面板 -->
+    <div id="LoadingBG">
+        <div id="LoadingPanel">
+            <br>
+            <div id="LoadingMsg">Now Loading...</div>
+            <div id="LoadingBlock">
+                <div id="LoadedBlock"></div>
+            </div>
+            <br>
+            <p id="noticeCN">编辑器初始化加载中...若未能正常运行，请尝试使用Chrome或者Firefox打开...</p>
+            <p id="noticeUS">FK Editor is initiating...If this doesnt work, try to use Chrome or Firefox...</p>
+        </div>
+    </div>
+    <header>
+        <h1>FK_Editor</h1>
+        <h2>Version 0.0.1</h2>
+    </header>
+    <!-- 编辑器类型选项面板 -->
+    <div id="editSelectionBG">
+        <div id="editItemContainer">
+        </div>
+    </div>
+    <div id="MainBG">
+
+        <!--
+        <div id="tabSpacer"></div>
+        <div id="skillTab" class="tab tabLeft tabActive">
+            Dialogs
+        </div>
+        -->
+        <div id="Nodes">
+            <select id="NodeList" size="30">
+                <option selected="selected">新节点</option>
+                <option>增加新节点</option>
+            </select>
+
+            <div id="Builder">
+                <h6 id="BaseSettings">基本设置</h6>
+                <h6 id="AdvancedSettings">高级设置</h6>
+                <h6 id="SaveNode">保存</h6>
+                <h6 id="DeleteNode" class="cancelButton">删除</h6>
+                <div id="BuilderContent"></div>
+            </div>
+            <div id="NodeForm">
+            </div>
+            <div id="TriggerChooser">
+                <h4>高级设置</h4>
+                <div id="TriggerOptions"></div>
+                <h5 class="cancelButton">取消</h5>
+            </div>
+
+            <div id="ComponentChooser">
+                <h4>Random Spawn Options</h4>
+                <color="red">These options should only be used as a child node for RandomSpawn. Using them with another configuration setting will do nothing.</font>
+                    <div id="TargetOptions"></div>
+                <hr/>
+                <h5 class="cancelButton">取消</h5>
+            </div>
+            -->
+        </div>
+
+        <!--
+        <div id="classes">
+            <select id="classList" size="30">
+                <option selected="selected">Dialog 1</option>
+                <option>+ New Dialog</option>
+            </select>
+            <div id="classForm"></div>
+        </div>
+        -->
+    </div>
+</body>
+</html>
